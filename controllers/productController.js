@@ -11,7 +11,7 @@ exports.getProducts = async (req, res, next) => {
 
     res.json({
         sucess: true,
-        products
+        data:  products
     });
 };
 
@@ -22,7 +22,7 @@ exports.getSingleProduct = async (req, res, next) => {
     
         res.json({
             sucess: true,
-            product
+            data:  product
         });
     } catch (error) {
         res.status(404).json({

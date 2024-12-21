@@ -2,15 +2,21 @@ const UserModel = require("../models/userModel");
 const bcrypt = require('bcrypt');
 
 exports.login = async (req, res, next) => {
-    const {email, password} = req.body;
-    const userData = await UserModel.findOne({email});
+    const { email, password } = req.body;
+    const userData = await UserModel.findOne({ email });
+
+    const responseData = {
+        id: userData._id,
+        name: userData.name,
+        email: userData.email
+    };
 
     if (userData) {
         const isPasswordMatching = await bcrypt.compare(password, userData.password);
         if (isPasswordMatching) {
             res.json({
                 sucess: true,
-                userData
+                data: responseData
             });
         } else {
             res.json({
@@ -29,9 +35,9 @@ exports.login = async (req, res, next) => {
 }
 
 exports.register = async (req, res, next) => {
-    const {name, email, password} = req.body;
+    const { name, email, password } = req.body;
     try {
-        const existingData = await UserModel.findOne({email});
+        const existingData = await UserModel.findOne({ email });
         if (existingData) {
             res.json({
                 sucess: false,
@@ -41,11 +47,17 @@ exports.register = async (req, res, next) => {
         }
         const saltRounds = 10;
         const hashedPassword = await bcrypt.hash(password, saltRounds);
-        const userDetails = await UserModel.create({name, email, password: hashedPassword});
+        const userDetails = await UserModel.create({ name, email, password: hashedPassword });
+
+        const responseData = {
+            id: userDetails._id,
+            name: userDetails.name,
+            email: userDetails.email
+        };
 
         res.json({
             sucess: true,
-            userDetails
+            data: responseData
         });
     } catch (error) {
         res.json({

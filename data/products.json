@@ -1,103 +1,163 @@
 [
   {
-    "name": "OPPO F21s Pro 5G",
-    "price": 245.67,
-    "description": "OPPO F21s Pro 5G is a powerful device with a RAM extension feature, that offers brilliant operational speed to users.",
+    "_id": {
+      "$oid": "674c78e9161947a67d8aca4e"
+    },
+    "name": "Iphone 15 Pro Max",
+    "price": 128900,
+    "description": "iPhone 15 Pro Max has a strong and light aerospace-grade titanium design with a textured matte-glass back. It also features a Ceramic Shield front that’s tougher than any smartphone glass. And it’s splash, water, and dust resistant.",
+    "ratings": 4.4,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/81c50PU+lpL._AC_UF1000,1000_QL80_.jpg"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/51hWMvjCV8L._SX569_.jpg"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/81MDZsYTIoL._SX569_.jpg"
+      }
+    ],
+    "category": "Mobile",
+    "seller": "Amazon",
+    "stock": 534
+  },
+  {
+    "_id": {
+      "$oid": "674c78e9161947a67d8aca4f"
+    },
+    "name": "Samsung Galaxy S24 Ultra 5G AI Smartphone",
+    "price": 131999,
+    "description": "Meet Galaxy S24 Ultra, the ultimate form of Galaxy Ultra with a new titanium exterior and a 17.25cm (6.8) flat display. It's an absolute marvel of design.",
     "ratings": 4.5,
     "images": [
       {
-        "image": "/images/products/1.jpg"
+        "image": "https://m.media-amazon.com/images/I/81vxWpPpgNL._SX679_.jpg"
       },
       {
-        "image": "/images/products/2.jpg"
-      }
-    ],
-    "category": "Mobile Phones",
-    "seller": "Amazon",
-    "stock": 5
-  },
-  {
-    "name": "WRISTIO HD, Bluetooth Calling Smart Watch",
-    "price": 150.32,
-    "description": "Minix watches are exclusively designed to fulfill the advanced tech needs of today’s generation.",
-    "ratings": 3.5,
-    "images": [
+        "image": "https://m.media-amazon.com/images/I/71T66HmL6OL._SX679_.jpg"
+      },
       {
-        "image": "/images/products/2.jpg"
+        "image": "https://m.media-amazon.com/images/I/81wBTXHaAdL._SX679_.jpg"
       }
     ],
-    "category": "Accessories",
+    "category": "Mobile",
     "seller": "Flipkart",
-    "stock": 9
+    "stock": 446
   },
   {
-    "name": "Dell Inspiron 3511 Laptop",
-    "price": 440.57,
-    "description": "Dell Inspiron 3511 11th Generation Intel Core i5-1135G7 Processor (8MB Cache, up to 4.2 GHz);Operating System: Windows 10 Home Single Language, English",
-    "ratings": 2,
+    "_id": {
+      "$oid": "674c78e9161947a67d8aca50"
+    },
+    "name": "Apple 2024 MacBook Pro Laptop with M4 Pro chip with 12‑core CPU and 16‑core GPU",
+    "price": 191990,
+    "description": "The 14″ MacBook Pro with the M4 Pro or M4 Max chip gives you outrageous performance in a powerhouse laptop built for Apple Intelligence. With all-day battery life and a breathtaking Liquid Retina XDR display with up to 1,600 nits peak brightness, it’s pro in every way.",
+    "ratings": 5.0,
     "images": [
       {
-        "image": "/images/products/3.jpg"
+        "image": "https://m.media-amazon.com/images/I/61eA9PkZ07L._SX569_.jpg"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/61jsXaFZxTL._SX569_.jpg"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/81ocM4hqEfL._SX569_.jpg"
       }
     ],
     "category": "Laptops",
     "seller": "Ebay",
-    "stock": 9
+    "stock": 89
   },
   {
-    "name": "Lenovo IdeaPad Slim 3 Laptop",
-    "price": 250.45,
-    "description": "Lenovo IdeaPad Slim 311th Gen Intel Core i5-1135G7 | Speed: 2.4 GHz (Base) - 4.2 GHz (Max) | 4 Cores | 8 Threads | 8 MB Cache",
-    "ratings": 4,
+    "_id": {
+      "$oid": "674c78e9161947a67d8aca51"
+    },
+    "name": "HP Laptop 15s, 12th Gen Intel Core i3, 15.6-inch (39.6 cm), 8GB DDR4, 512GB SSD, Thin & Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), fq5007TU / FQ5327TU",
+    "price": 37990,
+    "description": "8 threads and 10MB L3 cache deliver high performance and instant responsiveness. The Intel UHD graphics help you dive into crisp, stunning visuals.",
+    "ratings": 4.0,
     "images": [
       {
-        "image": "/images/products/6.jpg"
+        "image": "https://m.media-amazon.com/images/I/51ksgjS71zL._SX569_.jpg"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/71BrIddf8LL._SX569_.jpg"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/716vPUQ-OoL._SX569_.jpg"
       }
     ],
     "category": "Laptops",
     "seller": "Ebay",
-    "stock": 9
+    "stock": 47
   },
   {
-    "name": "ASUS VivoBook 15 Laptop",
-    "price": 767.32,
-    "description": "ASUS VivoBook 15 15.6-inch (39.62 cm) HD, Dual Core Intel Celeron N4020, Thin and Light Laptop (4GB RAM/256GB SSD/Integrated Graphics/Windows 11 Home/Transparent Silver/1.8 Kg), X515MA-BR011W",
-    "ratings": 5,
+    "_id": {
+      "$oid": "674c78e9161947a67d8aca52"
+    },
+    "name": "Acer Aspire 3 Laptop Intel Core Celeron N4500 Processor Laptop (8 GB LPDDR4X SDRAM/256 GB SSD/Win11 Home/38 WHR/HD Webcam) A325-45 with 39.63 cm (15.6) HD Display, Pure Silver, 1.5 KG",
+    "price": 20990,
+    "description": "Whether you're at home, school, or work, get all the performance you need with the latest Intel Celeron N4500 Processor @ 1.10GHz ( 2 Cores, 4M Cache, up to 2.80 GHz); maintaining order and keeping your apps running consistently and smoothly.",
+    "ratings": 3.2,
     "images": [
       {
-        "image": "/images/products/7.jpg"
+        "image": "https://m.media-amazon.com/images/I/61qlqvTsocL._SX569_.jpg"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/71p+Rn+JgbL._SX569_.jpg"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/81VaK2cK4gL._SX569_.jpg"
       }
     ],
     "category": "Laptops",
     "seller": "Ebay",
-    "stock": 9
+    "stock": 23
   },
   {
-    "name": "PTron Newly Launched Tangent Sports, 60Hrs Playtime",
-    "price": 15.46,
-    "description": "Gigantic 60 + Hours of music playtime on a single charge; BT5.2 Wireless headphones with ENC (Environmental Noise Cancellation) Technology to enhance your voice quality over the voice calls",
-    "ratings": 5,
+    "_id": {
+      "$oid": "674c78e9161947a67d8aca53"
+    },
+    "name": "Apple AirPods 4 Wireless Earbuds, Bluetooth Headphones, Personalised Spatial Audio, Sweat and Water Resistant, USB-C Charging Case, H2 Chip, Up to 30 Hours of Battery Life, Effortless Setup for iPhone",
+    "price": 12823,
+    "description": "AirPods 4 have been redesigned for exceptional all-day comfort and greater stability. With a refined contour, shorter stem and quick-press controls for music or calls.",
+    "ratings": 3.6,
     "images": [
       {
-        "image": "/images/products/4.jpg"
+        "image": "https://m.media-amazon.com/images/I/61oCISLE+PL._SX522_.jpg"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/51pOjb8cWPL._SX522_.jpg"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/71c1ABI5GAL._SX522_.jpg"
       }
     ],
     "category": "Headphones",
     "seller": "Amazon",
-    "stock": 4
+    "stock": 123
   },
   {
-    "name": "Campus Men's Maxico Running Shoes",
-    "price": 10.12,
-    "description": "The high raised back cover with extra padding.",
-    "ratings": 3,
+    "_id": {
+      "$oid": "674c78e9161947a67d8aca54"
+    },
+    "name": "Yonex Badminton Racquet Astrox Attack 9 Pearl White G4 4U(80GMS-32LBS) (Made in India)",
+    "price": 1499,
+    "description": "The racquet you finally wield on court must be the right fit for you and should match your playing ability.  Consider important things such as hand grip, racquet weight, head shape, and balance point.",
+    "ratings": 3.9,
     "images": [
       {
-        "image": "/images/products/5.jpg"
+        "image": "https://m.media-amazon.com/images/I/616PrNYfGnL._SX522_.jpg"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/61rh7yDnQ6L._SX522_.jpg"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/71OzoabCPpL._SX522_.jpg"
       }
     ],
     "category": "Sports",
-    "seller": "Ebay",
-    "stock": 6
+    "seller": "Amazon",
+    "stock": 254
   }
 ]
