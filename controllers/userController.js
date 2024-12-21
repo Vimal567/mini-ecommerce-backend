@@ -65,5 +65,58 @@ exports.register = async (req, res, next) => {
             error: error
         });
     }
-
 }
+
+exports.updateUser = async (req, res, next) => {
+    const { id, name, old_password, password } = req.body;
+    try {
+        const userDetails = await UserModel.findById(id);
+        if (!userDetails) {
+            res.json({
+                success: false,
+                message: "User not found!"
+            });
+            return;
+        }
+
+        // Update name if provided
+        if (name) {
+            userDetails.name = name;
+        }
+
+        // Update password if provided
+        if (password) {
+            //check if old password matches
+            const isPasswordMatching = await bcrypt.compare(old_password, userDetails.password);
+            if (!isPasswordMatching) {
+                res.json({
+                    sucess: false,
+                    message: "Old Password is incorrect"
+                });
+                return;
+            }
+            const saltRounds = 10;
+            const hashedPassword = await bcrypt.hash(password, saltRounds);
+            userDetails.password = hashedPassword;
+        }
+
+        // Save the updated user
+        const updatedUser = await userDetails.save();
+
+        const responseData = {
+            id: updatedUser._id,
+            name: updatedUser.name,
+            email: updatedUser.email
+        };
+
+        res.json({
+            success: true,
+            data: responseData
+        });
+    } catch (error) {
+        res.json({
+            success: false,
+            error: error.message
+        });
+    }
+};
