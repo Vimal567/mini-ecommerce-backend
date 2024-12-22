@@ -19,7 +19,7 @@ exports.createOrder = async (req, res, next) => {
     });
 
     res.json({
-        sucess: true,
+        success: true,
         data: order
     });
 };

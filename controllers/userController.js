@@ -15,18 +15,18 @@ exports.login = async (req, res, next) => {
         const isPasswordMatching = await bcrypt.compare(password, userData.password);
         if (isPasswordMatching) {
             res.json({
-                sucess: true,
+                success: true,
                 data: responseData
             });
         } else {
             res.json({
-                sucess: false,
+                success: false,
                 message: "Password is incorrect"
             });
         }
     } else {
         res.json({
-            sucess: false,
+            success: false,
             message: "No records found!"
         });
     }
@@ -40,7 +40,7 @@ exports.register = async (req, res, next) => {
         const existingData = await UserModel.findOne({ email });
         if (existingData) {
             res.json({
-                sucess: false,
+                success: false,
                 message: "Email already exists!"
             });
             return;
@@ -56,12 +56,12 @@ exports.register = async (req, res, next) => {
         };
 
         res.json({
-            sucess: true,
+            success: true,
             data: responseData
         });
     } catch (error) {
         res.json({
-            sucess: false,
+            success: false,
             error: error
         });
     }
@@ -90,7 +90,7 @@ exports.updateUser = async (req, res, next) => {
             const isPasswordMatching = await bcrypt.compare(old_password, userDetails.password);
             if (!isPasswordMatching) {
                 res.json({
-                    sucess: false,
+                    success: false,
                     message: "Old Password is incorrect"
                 });
                 return;
