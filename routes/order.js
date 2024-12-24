@@ -1,7 +1,8 @@
 const express = require('express');
-const { createOrder } = require('../controllers/orderController');
+const { createOrder, getOrders } = require('../controllers/orderController');
 const router = express.Router();
 
+router.route('/order').get(getOrders);
 router.route('/order').post(createOrder);
 
 
