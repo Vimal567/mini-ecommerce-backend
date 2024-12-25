@@ -22,7 +22,7 @@ exports.getSingleProduct = async (req, res, next) => {
     
         res.json({
             success: true,
-            data:  product
+            data:  [product]
         });
     } catch (error) {
         res.status(404).json({

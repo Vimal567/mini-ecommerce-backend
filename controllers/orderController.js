@@ -2,8 +2,8 @@ const orderModel = require('../models/orderModel');
 const ProductModel = require('../models/productModel');
 
 exports.getOrders = async (req, res, next) => {
-    const {account_id} = req.query;
-    const orders = await orderModel.find({accountId: account_id});
+    const { account_id } = req.query;
+    const orders = await orderModel.find({ accountId: account_id });
     res.json({
         success: true,
         data: orders
@@ -18,17 +18,41 @@ exports.createOrder = async (req, res, next) => {
     }, 0)).toFixed(2);
     const status = 'pending';
 
-    const order = await orderModel.create({accountId: account_id, cartltems: cart_items, amount, status});
+    let cartData = await orderModel.findOne({ accountId: account_id });
+
+    if (!cartData) {
+        cartData = await orderModel.create({ accountId: account_id, cartItems: cart_items, amount, status });
+    } else {
+        // If the cart exists, check if the product is already in the cart
+        const existingItem = cartData.cartItems.find(item => item.product.id === cart_items[0].product.id);
+        if (existingItem) {
+            // If product already in cart no changes
+            res.json({
+                success: true,
+                data: cartData
+            });
+            return;
+        } else {
+            // If product is not in cart, add it
+            cartData.cartItems.push(...cart_items);
+            cartData.amount += amount;
+        }
+        await cartData.save();
+    }
 
     //Update product stocks
-    cart_items.forEach(async (item) => {
+    const updateStockPromises = cart_items.map(async (item) => {
         const product = await ProductModel.findById(item.product._id);
-        product.stock = product.stock - item.qty;
-        await product.save();
+        if (product) {
+            product.stock = product.stock - item.qty;
+            await product.save();
+        }
     });
+
+    await Promise.all(updateStockPromises);
 
     res.json({
         success: true,
-        data: order
+        data: cartData
     });
 };

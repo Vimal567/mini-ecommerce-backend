@@ -5,7 +5,12 @@
         },
         "name": "Apple IPhone 15 Pro Max (512 GB) - White Titanium",
         "price": 128900,
-        "description": "iPhone 15 Pro Max has a strong and light aerospace-grade titanium design with a textured matte-glass back. It also features a Ceramic Shield front that’s tougher than any smartphone glass. And it’s splash, water, and dust resistant.",
+        "description": [
+            "Strong and light aerospace-grade titanium design",
+            "Textured matte-glass back for a premium feel",
+            "Ceramic Shield front that’s tougher than any smartphone glass",
+            "Splash, water, and dust resistant"
+        ],
         "ratings": 4,
         "images": [
             {
@@ -28,7 +33,12 @@
         },
         "name": "Samsung Galaxy S24 Ultra 5G AI Smartphone",
         "price": 131999,
-        "description": "Meet Galaxy S24 Ultra, the ultimate form of Galaxy Ultra with a new titanium exterior and a 17.25cm (6.8) flat display. It's an absolute marvel of design.",
+        "description": [
+            "New titanium exterior for durability and style",
+            "17.25 cm (6.8 inches) flat display for an immersive experience",
+            "AI-powered features for smart functionality",
+            "Designed for ultimate performance"
+        ],
         "ratings": 4,
         "images": [
             {
@@ -51,7 +61,13 @@
         },
         "name": "Apple 2024 MacBook Pro Laptop with M4 Pro chip with 12‑core CPU and 16‑core GPU",
         "price": 191990,
-        "description": "The 14″ MacBook Pro with the M4 Pro or M4 Max chip gives you outrageous performance in a powerhouse laptop built for Apple Intelligence. With all-day battery life and a breathtaking Liquid Retina XDR display with up to 1,600 nits peak brightness, it’s pro in every way.",
+        "description": [
+            "Powered by the M4 Pro or M4 Max chip for exceptional performance",
+            "12-core CPU and 16-core GPU for smooth multitasking",
+            "All-day battery life for uninterrupted work",
+            "Breathtaking Liquid Retina XDR display with up to 1,600 nits peak brightness",
+            "Pro-grade laptop for professionals"
+        ],
         "ratings": 5,
         "images": [
             {
@@ -74,7 +90,13 @@
         },
         "name": "HP Laptop 15s, 12th Gen Intel Core i3, 15.6-inch (39.6 cm), 8GB DDR4, 512GB SSD, Thin & Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), fq5007TU / FQ5327TU",
         "price": 37990,
-        "description": "8 threads and 10MB L3 cache deliver high performance and instant responsiveness. The Intel UHD graphics help you dive into crisp, stunning visuals.",
+        "description": [
+            "Powered by the 12th Gen Intel Core i3 processor",
+            "8 threads and 10MB L3 cache for high performance",
+            "Intel UHD graphics for stunning visuals",
+            "Thin & light design with a weight of 1.69 kg",
+            "Ideal for everyday tasks and work"
+        ],
         "ratings": 3,
         "images": [
             {
@@ -97,7 +119,13 @@
         },
         "name": "Acer Aspire 3 Laptop Intel Core Celeron N4500 Processor Laptop (8 GB LPDDR4X SDRAM/256 GB SSD/Win11 Home/38 WHR/HD Webcam) A325-45 with 39.63 cm (15.6) HD Display, Pure Silver, 1.5 KG",
         "price": 20990,
-        "description": "Whether you're at home, school, or work, get all the performance you need with the latest Intel Celeron N4500 Processor @ 1.10GHz ( 2 Cores, 4M Cache, up to 2.80 GHz); maintaining order and keeping your apps running consistently and smoothly.",
+        "description": [
+            "Powered by Intel Celeron N4500 Processor for everyday tasks",
+            "8 GB LPDDR4X SDRAM and 256 GB SSD for smooth performance",
+            "15.6-inch HD display for clear visuals",
+            "Weighs only 1.5 kg, ideal for portability",
+            "Preloaded with Windows 11 Home for an updated experience"
+        ],
         "ratings": 2,
         "images": [
             {
@@ -120,7 +148,13 @@
         },
         "name": "Apple AirPods 4 Wireless Earbuds, Bluetooth Headphones, Personalised Spatial Audio, Sweat and Water Resistant, USB-C Charging Case, H2 Chip, Up to 30 Hours of Battery Life, Effortless Setup for iPhone",
         "price": 12823,
-        "description": "AirPods 4 have been redesigned for exceptional all-day comfort and greater stability. With a refined contour, shorter stem and quick-press controls for music or calls.",
+        "description": [
+            "Redesigned for exceptional all-day comfort",
+            "Personalized Spatial Audio for immersive sound",
+            "Sweat and water-resistant for active use",
+            "USB-C charging case for quick power-ups",
+            "Up to 30 hours of battery life"
+        ],
         "ratings": 1,
         "images": [
             {
@@ -143,7 +177,13 @@
         },
         "name": "Yonex Badminton Racquet Astrox Attack 9 Pearl White G4 4U(80GMS-32LBS) (Made in India)",
         "price": 1499,
-        "description": "The racquet you finally wield on court must be the right fit for you and should match your playing ability.  Consider important things such as hand grip, racquet weight, head shape, and balance point.",
+        "description": [
+            "Designed for players with a focus on control and power",
+            "Lightweight racquet with an 80g weight",
+            "Made with durable materials for lasting performance",
+            "Head shape and balance point optimized for attack shots",
+            "Ideal for players of all skill levels"
+        ],
         "ratings": 4,
         "images": [
             {
