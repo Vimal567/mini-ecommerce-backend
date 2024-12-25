@@ -24,7 +24,7 @@ exports.createOrder = async (req, res, next) => {
         cartData = await orderModel.create({ accountId: account_id, cartItems: cart_items, amount, status });
     } else {
         // If the cart exists, check if the product is already in the cart
-        const existingItem = cartData.cartItems.find(item => item.product._id.toString() === cart_items[0].product._id.toString());
+        const existingItem = cartData.cartItems.find(item => item.product._id === cart_items[0].product._id);
         if (existingItem) {
             // If product already in cart no changes
             res.json({
