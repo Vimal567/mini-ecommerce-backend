@@ -12,44 +12,69 @@ exports.getCart = async (req, res, next) => {
 
 exports.createCart = async (req, res, next) => {
 
-    const { cart_items, account_id } = req.body;
-    const amount = Number(cart_items.reduce((acc, item) => {
-        return acc + item.product.price * item.qty;
-    }, 0)).toFixed(2);
-    const status = 'pending';
+    const { cart_item, account_id } = req.body;
 
     let cartData = await cartModel.findOne({ accountId: account_id });
+    const product = await ProductModel.findById({ _id: cart_item.product.id });
 
     if (!cartData) {
-        cartData = await cartModel.create({ accountId: account_id, cartItems: cart_items, amount, status });
-    } else {
-        // If the cart exists, check if the product is already in the cart
-        const existingItem = cartData.cartItems.find(item => item.product.id === cart_items[0].product.id);
-        if (existingItem) {
-            // If product already in cart no changes
+        const amount = cart_item.product.price * cart_item.qty;
+        product.stock = product.stock - cart_item.qty;
+        if (product.stock < 0) {
             res.json({
-                success: true,
-                data: cartData
+                success: false,
+                message: "Product stock not available"
             });
             return;
-        } else {
-            // If product is not in cart, add it
-            cartData.cartItems.push(...cart_items);
-            cartData.amount += amount;
         }
+        await product.save();
+        cartData = await cartModel.create({ accountId: account_id, cartItems: cart_item, amount });
+    } else {
+        //Update product stocks
+        // If the cart exists, check if the product is already in the cart
+        const existingItem = cartData.cartItems.find(item => item.product.id === cart_item.product.id);
+        if (!existingItem) {
+            product.stock = product.stock - cart_item.qty;
+        } else if (existingItem.qty < cart_item.qty) {
+            product.stock = product.stock - cart_item.qty;
+        } else {
+            product.stock = product.stock + cart_item.qty;
+        }
+        // If stock is insufficient, return an error
+        if (product.stock < 0) {
+            res.json({
+                success: false,
+                message: "Product stock not available"
+            });
+            return;
+        }
+        await product.save();
+
+        if (existingItem) {
+            if (cart_item.qty === 0) {
+                // If quantity is 0, remove the product
+                cartData.cartItems = cartData.cartItems.filter(item => item.product.id !== cart_item.product.id);
+            } else {
+                // Update quantity for existing item
+                existingItem.qty = cart_item.qty;
+                cartData.cartItems = cartData.cartItems.map(item => {
+                    if (item.product.id === cart_item.product.id) {
+                        return existingItem;
+                    } else {
+                        return item;
+                    }
+                });
+            }
+        } else if (cart_item.qty > 0) {
+            // If product doesn't exist in the cart and quantity is greater than 0, add it
+            cartData.cartItems.push(cart_item);
+        }
+
+        // Recalculate the total amount
+        cartData.amount = cartData.cartItems ? cartData.cartItems.reduce((acc, item) => acc + item.product.price * item.qty, 0).toFixed(2) : 0;
+        cartData.markModified('cartItems');
         await cartData.save();
     }
-
-    //Update product stocks
-    const updateStockPromises = cart_items.map(async (item) => {
-        const product = await ProductModel.findById(item.product._id);
-        if (product) {
-            product.stock = product.stock - item.qty;
-            await product.save();
-        }
-    });
-
-    await Promise.all(updateStockPromises);
 
     res.json({
         success: true,
