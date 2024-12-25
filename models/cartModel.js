@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const orderSchema = new mongoose.Schema({
+const cartSchema = new mongoose.Schema({
     accountId: String,
     cartItems: Array,
     amount: Number,
@@ -8,6 +8,6 @@ const orderSchema = new mongoose.Schema({
     createdAt: Date
 });
 
-const cartModel = mongoose.model('Cart', orderSchema);
+const cartModel = mongoose.model('Cart', cartSchema);
 
 module.exports = cartModel;
