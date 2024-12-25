@@ -1,16 +1,16 @@
-const orderModel = require('../models/orderModel');
+const cartModel = require('../models/cartModel');
 const ProductModel = require('../models/productModel');
 
-exports.getOrders = async (req, res, next) => {
+exports.getCart = async (req, res, next) => {
     const { account_id } = req.query;
-    const orders = await orderModel.find({ accountId: account_id });
+    const cart = await cartModel.find({ accountId: account_id });
     res.json({
         success: true,
-        data: orders
+        data: cart
     });
 }
 
-exports.createOrder = async (req, res, next) => {
+exports.createCart = async (req, res, next) => {
 
     const { cart_items, account_id } = req.body;
     const amount = Number(cart_items.reduce((acc, item) => {
@@ -18,10 +18,10 @@ exports.createOrder = async (req, res, next) => {
     }, 0)).toFixed(2);
     const status = 'pending';
 
-    let cartData = await orderModel.findOne({ accountId: account_id });
+    let cartData = await cartModel.findOne({ accountId: account_id });
 
     if (!cartData) {
-        cartData = await orderModel.create({ accountId: account_id, cartItems: cart_items, amount, status });
+        cartData = await cartModel.create({ accountId: account_id, cartItems: cart_items, amount, status });
     } else {
         // If the cart exists, check if the product is already in the cart
         const existingItem = cartData.cartItems.find(item => item.product.id === cart_items[0].product.id);

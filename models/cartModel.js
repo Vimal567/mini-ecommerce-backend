@@ -8,6 +8,6 @@ const orderSchema = new mongoose.Schema({
     createdAt: Date
 });
 
-const orderModel = mongoose.model('Order', orderSchema);
+const cartModel = mongoose.model('Order', orderSchema);
 
-module.exports = orderModel;
+module.exports = cartModel;
