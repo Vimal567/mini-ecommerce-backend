@@ -7,6 +7,7 @@ const connectDatabase = require('./config/connectDatabase');
 dotenv.config({path: path.join(__dirname, 'config', 'config.env')});
 const port = process.env.PORT || 3000;
 
+const orders = require('./routes/order');
 const products = require('./routes/product');
 const cart = require('./routes/cart');
 const users = require('./routes/user');
@@ -16,6 +17,7 @@ connectDatabase();
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(cors());
+app.use('/api', orders);
 app.use('/api', products);
 app.use('/api', cart);
 app.use('/api', users);

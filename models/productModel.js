@@ -13,8 +13,7 @@ const productSchema =  new mongoose.Schema({
     category: String,
     seller: String,
     stock: Number,
-    numberOfReviews: String,
-    createdAt: Date
+    ratings: String
 });
 
 const productModel = mongoose.model('Product', productSchema);
