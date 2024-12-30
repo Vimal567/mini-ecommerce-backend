@@ -4,9 +4,17 @@ const ProductModel = require('../models/productModel');
 exports.getCart = async (req, res, next) => {
     const { account_id } = req.query;
     const cart = await cartModel.find({ accountId: account_id });
+
+    if (!cart || cart.length === 0) {
+        return res.json({
+            success: false,
+            message: "Cart is empty"
+        });
+    }
+    
     res.json({
         success: true,
-        data: cart
+        data: cart[0]
     });
 }
 

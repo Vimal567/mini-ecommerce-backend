@@ -5,15 +5,14 @@ exports.login = async (req, res, next) => {
     const { email, password } = req.body;
     const userData = await UserModel.findOne({ email });
 
-    const responseData = {
-        id: userData._id,
-        name: userData.name,
-        email: userData.email
-    };
-
     if (userData) {
         const isPasswordMatching = await bcrypt.compare(password, userData.password);
         if (isPasswordMatching) {
+            const responseData = {
+                id: userData._id,
+                name: userData.name,
+                email: userData.email
+            };
             res.json({
                 success: true,
                 data: responseData
@@ -27,7 +26,7 @@ exports.login = async (req, res, next) => {
     } else {
         res.json({
             success: false,
-            message: "No records found!"
+            message: "Please register and try again!"
         });
     }
 
