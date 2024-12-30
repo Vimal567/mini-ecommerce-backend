@@ -9,7 +9,7 @@ exports.getOrders = async (req, res, next) => {
     if (orders && orders.length) {
         res.json({
             success: true,
-            data:  orders
+            data:  orders[0]
         });
     } else {
         res.json({

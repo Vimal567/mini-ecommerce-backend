@@ -25,7 +25,7 @@ exports.getSingleProduct = async (req, res, next) => {
             data:  [product]
         });
     } catch (error) {
-        res.status(404).json({
+        res.json({
             success: false,
             message: 'Unable to get Product'
         });
