@@ -27,7 +27,7 @@ exports.placeOrder = async (req, res, next) => {
 
         if (existingOrder) {
             // If an existing order is found, push new items to the existing order
-            existingOrder.orderItems.push(...orderItems);
+            existingOrder.orderItems.unshift(...orderItems);
             
             const updatedOrder = await existingOrder.save();
             
