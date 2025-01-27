@@ -199,5 +199,190 @@
         "category": "Sports",
         "seller": "Amazon",
         "stock": 254
+    },
+    {
+        "_id": {
+            "$oid": "674c78e9161947a67d8aca55"
+        },
+        "name": "boAt Bassheads 100 in Ear Wired Earphones with Mic(Black)",
+        "price": 299,
+        "description": [
+            "The perfect way to add some style and stand out from the crowd with the boAt BassHeads 100 'Hawk' inspired earphones.",
+            "Impedance: 16Ω, Sensitivity (dB): 92db ±3db, Frequency Response: 20Hz-20KHz.",
+            "The stylish BassHeads 100 superior coated wired earphones are a definite fashion statement - wear your attitude with its wide variety of collection.",
+            "The powerful 10mm dynamic driver with the speaker resistance of 16 ohms enables the earphone to deliver a punchy, rhythmic response to the most demanding tracks.",
+            "Features a HD microphone to make crystal clear calls - making life easier on the go.",
+            "Play/pause music or answer/end calls with one-click, track forward with two-clicks or back with 3 clicks make these earphones extremely user-friendly.",
+            "With 1.2 meters perfect length cable now plug it in anywhere with ease.",
+            "The earphones are extremely user-friendly and stylish, with extruding premium coating on the wire cable as part of the manufacturing process that has been refined since the company's inception.",
+            "Its impeccable fit won't let you take these wonderfully amazing earphones off, fits you perfectly without hurting your ears, and the perfect arc with different size ear tips helps you achieve superior comfort even with long listening hours.",
+            "1-year warranty from the date of purchase."
+        ],
+        "ratings": 4,
+        "images": [
+            {
+                "image": "https://m.media-amazon.com/images/I/313U7Xx9b4L._SX300_SY300_QL70_FMwebp_.jpg"
+            },
+            {
+                "image": "https://m.media-amazon.com/images/I/61UgSQ9UB2L._SX425_.jpg"
+            },
+            {
+                "image": "https://m.media-amazon.com/images/I/61ev3M9LmQL._SX425_.jpg"
+            }
+        ],
+        "category": "Headphones",
+        "seller": "Amazon",
+        "stock": 889
+    },
+    {
+        "_id": {
+            "$oid": "674c78e9161947a67d8aca56"
+        },
+        "name": "Mivi SuperPods Immersio [Just launched], True Wireless Earbuds, Dolby Audio, 3D Soundstage, 60H Playtime, AI ENC, BT v5.4 Earbuds",
+        "price": 2199,
+        "description": [
+            "Elevate your viewing experience with sound where action is brought to life by elevating sound for a cinematic viewing experience.",
+            "Feel the new depths of 3D Soundstage taking you deeper into the sound dimension with each instrument orchestrated for a deeper boost and richer treble. Such is the magic of this revolutionary pair of TWS earbuds.",
+            "It provides 8.5 Hrs of on-bud playtime and 60 Hrs of combined playtime. With just 10 minutes of charging, enjoy 500 minutes of playtime. The fast charge of these SuperPods comes with Type C charging.",
+            "Get ready bedazzled by a high-end Metallic glass finish casing with a sleek and sophisticated pair of buds effusing a rich look from the moment you rest your eyes on them. The iconic shades of these wireless earpods have been uniquely chosen to match your vibe.",
+            "Say Hello to HD Call Clarity with Quad-mic AI ENC. Long press your Mivi ear bud to 'Activate'."
+        ],
+        "ratings": 3,
+        "images": [
+            {
+                "image": "https://m.media-amazon.com/images/I/71QAJAs+oqL._SX522_.jpg"
+            },
+            {
+                "image": "https://m.media-amazon.com/images/I/8120K+w4KdL._SX522_.jpg"
+            },
+            {
+                "image": "https://m.media-amazon.com/images/I/71BHX3E+WHL._SX522_.jpg"
+            }
+        ],
+        "category": "Headphones",
+        "seller": "Amazon",
+        "stock": 457
+    },
+    {
+        "_id": {
+            "$oid": "674c78e9161947a67d8aca57"
+        },
+        "name": "JBL Vibe Beam in-Ear Wireless Earbuds (TWS) with Mic,App for Customized Extra Bass Eq,32 Hours Battery&Quick Charge,Ip54 Water&Dust Resistance,Ambient Aware&Talk-Thru,Google Fastpair (Blue)",
+        "price": 2499,
+        "description": [
+            "Get the most from your mixes with high-quality audio from secure, reliable earbuds with 8mm drivers featuring JBL Deep Bass Sound.",
+            "Up to 32 (8h + 24h) total hours of battery life with speed charging. With 8 hours of battery life in the earbuds and 24 in the case, the JBL Vibe Beam provide all-day audio. And when you need more power, you can speed charge an extra two hours in just 10 minutes.",
+            "When you’re making hands-free stereo calls on the go, VoiceAware lets you balance how much of your own voice you hear while talking with others.",
+            "From the beach to the bike trail, the IP54-certified earbuds and IPX2 charging case are water and dust resistant for all-day experiences.",
+            "Listen all day—your way. Dial in your preferred sound with the dedicated app and transform the JBL Vibe Beam into your ideal audio companion."
+        ],
+        "ratings": 4,
+        "images": [
+            {
+                "image": "https://m.media-amazon.com/images/I/61OQVEk3-TL._SX425_.jpg"
+            },
+            {
+                "image": "https://m.media-amazon.com/images/I/81Bd7mlDfFL._SX425_.jpg"
+            },
+            {
+                "image": "https://m.media-amazon.com/images/I/816I4+h0RVL._SX425_.jpg"
+            }
+        ],
+        "category": "Headphones",
+        "seller": "Amazon",
+        "stock": 457
+    },
+    {
+        "_id": {
+            "$oid": "674c78e9161947a67d8aca58"
+        },
+        "name": "Yonex Badminton Racquet Astrox Lite 37i 5U G4 (Black)",
+        "price": 1785,
+        "description": [
+            "Enlarged Sweet Spot compared to a conventional round frame, a square-shaped ISOMETRIC racquet generates a larger sweet spot by optimizing the intersection of the main and cross strings. ISOMETRIC delivers greater control without sacrificing power.",
+            "More speed = More power. Designed to slice through the air, generating speedy power."
+        ],
+        "ratings": 4,
+        "images": [
+            {
+                "image": "https://m.media-amazon.com/images/I/61Z71z8AwZL._SX522_.jpg"
+            },
+            {
+                "image": "https://m.media-amazon.com/images/I/61PW4Jkl8WL._SX522_.jpg"
+            },
+            {
+                "image": "https://m.media-amazon.com/images/I/71kjfSZqEnL._SX522_.jpg"
+            }
+        ],
+        "category": "Sports",
+        "seller": "flipkart",
+        "stock": 0
+    },
+    {
+        "_id": {
+            "$oid": "674c78e9161947a67d8aca59"
+        },
+        "name": "Click to open expanded view Samsung 8 kg, 5 star, Eco Bubble Technology, Digital Inverter Motor, Dual Storm, Fully-Automatic Top Load Washing Machine (WA80BG4441BGTL, Light Gray)",
+        "price": 1985,
+        "description": [
+            "Fully-automatic top load washing machine with Ecobubble wash technology: Affordable with great wash quality, Easy to use.",
+            "Suitable for large families. Water Pressure: (0.01-0.78 Mpa(01-8.0kg.f/cm²). Water Consumption: Refer to BEE label.",
+            "Energy Star rating: 5 Star. Digital Inverter for energy savings. Energy Consumption: Refer to BEE label.",
+            "2 Years comprehensive on product, 20 Years on Digital Inverter.",
+            "Motor: 700 RPM. Higher spin speeds helps in faster wash and drying. With its high speed and efficiency, it's perfect for busy households or those who want to get laundry done quickly and effectively.",
+            "6 Wash Programs: Bedding, Delicates, Eco Tub Clean, Energy Saving, Additional Cycle: Normal, Quick Wash, Jeans.",
+            "Drum Type: Diamond, Pulsator: Dual Storm & Plastic Body, Drum Material: Stainless Steel & Plastic Body.",
+            "Red LED Digital Display, Suitable for hard water washing.",
+            "Magic Filter, Eco Bubble, Bubble Storm.",
+            "Water Level: 5 Levels, Rat Mesh Protection, Rust-proof Body, Tempered Glass Window, Child Lock."
+        ],
+        "ratings": 2,
+        "images": [
+            {
+                "image": "https://m.media-amazon.com/images/I/71+xeoh7giL._SY679_.jpg"
+            },
+            {
+                "image": "https://m.media-amazon.com/images/I/71pdiKHEAgL._SX679_.jpg"
+            },
+            {
+                "image": "https://m.media-amazon.com/images/I/71p26hdQE7L._SX679_.jpg"
+            }
+        ],
+        "category": "Washing Machine",
+        "seller": "Olx",
+        "stock": 2
+    },
+    {
+        "_id": {
+            "$oid": "674c78e9161947a67d8aca60"
+        },
+        "name": "Whirlpool 7 Kg 5 Star Royal Fully-Automatic Top Loading Washing Machine (WHITEMAGIC ROYAL 7.0 GENX, Grey, Hard Water Wash, ZPF Technology)",
+        "price": 14990,
+        "description": [
+            "Affordable with best wash quality with Hard Water Wash.",
+            "Capacity: 7 kg (Suitable for Small to Medium sized family).",
+            "Energy star rating 5 Star: Best in class efficiency.",
+            "Manufacturer Warranty: 2 years on product, 5 years on motor.",
+            "Motor: 740 RPM; Higher spin speed helps in faster drying.",
+            "12 Wash Programs: Daily, Heavy, Delicate, Whites, Stainwash, Wash Only, Woollens, Bedsheet, Eco Wash, Rinse + Dry, Dry, Aqua Store.",
+            "Drum: Steel, Body Material: Stainless Steel.",
+            "Dry Tap Sensing (The machine intuitively detects and indicates if there is no water supply either through the tap or a filter blocked with foreign objects), ZPF Technology, Smart Sensor, Delay Wash.",
+            "Express Wash, 123 Wash, Low Noise Level, Spiro Wash."
+        ],
+        "ratings": 4,
+        "images": [
+            {
+                "image": "https://m.media-amazon.com/images/I/61lxAOttcYL._SX679_.jpg"
+            },
+            {
+                "image": "https://m.media-amazon.com/images/I/61Ziakl5MQL._SX569_.jpg"
+            },
+            {
+                "image": "https://m.media-amazon.com/images/I/61kdpWCcOWL._SX679_.jpg"
+            }
+        ],
+        "category": "Washing Machine",
+        "seller": "Amazon",
+        "stock": 418
     }
 ]
