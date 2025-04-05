@@ -17,6 +17,7 @@ connectDatabase();
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
+app.get('/', (req, res) => res.send("Api is working!"));
 app.use('/api', orders);
 app.use('/api', products);
 app.use('/api', cart);
