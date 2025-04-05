@@ -8,6 +8,10 @@
   ],
   "routes": [
     {
+      "src": "/products",
+      "dest": "/products"
+    },
+    {
       "src": "/(.*)",
       "dest": "/"
     }
